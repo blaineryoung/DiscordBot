@@ -11,6 +11,7 @@ use serenity::framework::standard::{
 };
 
 use std::fmt::Write;
+use std::env;
 
 #[group]
 #[commands(ping)]
@@ -28,7 +29,8 @@ async fn main() {
         .group(&GENERAL_GROUP);
 
     // Login with a bot token from the environment
-    let token = "NzkwNDkwNTU5MjQ3OTQxNjUz.X-BXsw.IulYgJtgiXGxnHsZtQHJ8n0rJHw";
+    let token = env::var("DISCORD_TOKEN")
+        .expect("Expected a token in the environment");
     let mut client = Client::builder(token)
         .event_handler(Handler)
         .framework(framework)
