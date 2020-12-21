@@ -1,0 +1,11 @@
+Azure db with rust
+https://dev.to/mindflavor/exploring-azure-cosmosdb-with-rust-part-2-32c0
+
+Making a discord bot:
+https://realpython.com/how-to-make-a-discord-bot-python/#how-to-make-a-discord-bot-in-the-developer-portal
+
+Serenity: rust discord api
+https://github.com/serenity-rs/serenity
+
+Rust by example:
+https://doc.rust-lang.org/stable/rust-by-example/mod/split.html
